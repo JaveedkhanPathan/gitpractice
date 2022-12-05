@@ -1,0 +1,15 @@
+export interface IBaseFormField {
+    kind: FieldKind;
+    nameOrLocator: string | CodeceptJS.Locator;
+    section?: string;
+  }
+  
+  export enum FieldKind {
+    INPUT,
+    REACTSELECT,
+    REACTDROPDOWN,
+    SELECT,
+    SWITCH,
+    CHECKBOX,
+    RADIO
+  }
